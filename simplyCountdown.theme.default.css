@@ -1,0 +1,45 @@
+.simply-countdown {
+  overflow: hidden;
+  display: table;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.simply-countdown > .simply-section:not(:last-child)::after {
+  content: ":";
+  display: block;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0 30px;
+}
+.simply-countdown > .simply-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.simply-countdown > .simply-section .simply-amount,
+.simply-countdown > .simply-section .simply-word {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .simply-countdown > .simply-section .simply-amount,
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .simply-countdown > .simply-section .simply-amount,
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 1rem;
+  }
+  .simply-countdown > .simply-section:not(:last-child)::after {
+    font-size: 2rem;
+    margin: 0 15px;
+  }
+}

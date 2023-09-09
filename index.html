@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/img/senpai_coder.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Programmer Elite</title>
+
+    <link rel="stylesheet" href="simplyCountdown.theme.default.css" />
+    <script src="simplyCountdown.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Coming soon</h1>
+      <p id="desc">
+        Kamu nanya? Kamu nanya kapan selesai websitenya? Biar aku kasih tau ya
+      </p>
+      <section>
+        <div class="simply-countdown"></div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Built with
+        <img src="/img/love-icon.svg" width="12px" height="12px" /> and code by
+        Eldis Simone&copy;2023
+      </p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+  <script>
+    simplyCountdown(".simply-countdown", {
+      year: 2024, // required
+      month: 6, // required
+      day: 28, // required
+      hours: 0, // Default is 0 [0-23] integer
+      minutes: 0, // Default is 0 [0-59] integer
+      seconds: 0, // Default is 0 [0-59] integer
+      words: {
+        days: { singular: "Hari", plural: "Hari" },
+        hours: { singular: "Jam", plural: "Jam" },
+        minutes: { singular: "Menit", plural: "Menit" },
+        seconds: { singular: "Detik", plural: "Detik" },
+      },
+    });
+  </script>
+</html>
